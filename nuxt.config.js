@@ -34,6 +34,9 @@ export default {
   buildModules: [
     '@nuxt/image',
   ],
+  image: {
+    provider: "netlify",
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
