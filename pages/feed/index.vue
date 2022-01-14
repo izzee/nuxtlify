@@ -1,11 +1,17 @@
 <template>
   <div>
-    <NuxtLink
-      v-for="post in posts"
-      :key="post.slug"
-      :to="post.path"
-      v-html="post.title"
-    />
+    <h1>Feed</h1>
+    <ul>
+      <li 
+        v-for="post in posts"
+        :key="post.slug"
+      >
+        <nuxt-link
+          :to="post.path"
+          v-html="post.title"
+        />
+      </li>
+    </ul>
   </div>
 </template>
 
