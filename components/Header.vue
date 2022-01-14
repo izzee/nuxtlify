@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="card">
     <h2>Nuxtlify</h2>
     <nav>
       <nuxt-link to="/" exact>Home</nuxt-link>
@@ -15,8 +15,6 @@
     display: flex;
     align-items: center;
     line-height: 1;
-    box-shadow: 0 0 0 2px $black;
-    border-radius: 8px;
   }
 
   nav {

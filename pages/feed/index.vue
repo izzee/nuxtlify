@@ -1,19 +1,22 @@
 <template>
   <main>
     <h1>Feed</h1>
-    <ul>
-      <li 
+    <div class="feed">
+      <nuxt-link 
         class="post"
         v-for="post in posts"
         :key="post.slug"
+        :to="post.path"
       >
-        <nuxt-link
-          :to="post.path"
-          v-html="post.title"
+        <nuxt-img 
+          :src="post.image" 
         />
-        <p v-html="formatDate(post.createdAt)"/>
-      </li>
-    </ul>
+        <div class="post-info">
+          <p v-html="post.title" />
+          <p v-html="formatDate(post.createdAt)" />
+        </div>
+      </nuxt-link>
+    </div>
   </main>
 </template>
 
@@ -35,12 +38,20 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.post {
+  display: block;
+  margin-top: 16px;
 
-  .post {
-    list-style: none;
-    padding: 16px;
-    margin: 16px 0;
-    border-radius: 8px;
-    border: 2px solid black;
+  img {
+    width: 100%;
   }
+  .post-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
 </style>

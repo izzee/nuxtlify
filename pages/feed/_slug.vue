@@ -1,7 +1,9 @@
 <template>
-  <article>
-    <nuxt-content :document="post" />
-  </article>
+<main>
+  <h1 v-html="post.title"/>
+  <nuxt-img :src="post.image"/>
+</main>
+
 </template>
 
 <script>
@@ -12,3 +14,10 @@
     }
   }
 </script>
+
+<style lang="scss" scoped>
+img {
+  margin-top: 16px;
+  width: 100%;
+}
+</style>
