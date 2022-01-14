@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1>Feed</h1>
     <ul>
       <li 
@@ -12,7 +12,7 @@
         />
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -25,8 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-
-</style>

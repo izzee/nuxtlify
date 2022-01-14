@@ -21,7 +21,16 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/main.scss',
+    '~/assets/type.scss',
   ],
+  // Global style resources - https://www.npmjs.com/package/@nuxtjs/style-resources
+  styleResources: {
+    scss: [
+      '~/assets/colors.scss', 
+      '~/assets/breakpoints.scss'
+    ],
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -33,6 +42,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     '@nuxt/image',
+    '@nuxtjs/style-resources',
   ],
   image: {
     provider: "netlify",
@@ -42,7 +52,6 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxt/image',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
