@@ -15,7 +15,7 @@
     display: flex;
     align-items: center;
     line-height: 1;
-    border: 2px solid $black;
+    box-shadow: 0 0 0 2px $black;
     border-radius: 8px;
   }
 
