@@ -8,6 +8,7 @@ public_folder: /images
 collections:
   - name: 'feed'
     label: 'Feed'
+    label_singular: "Post"
     folder: 'content/feed'
     format: 'frontmatter'
     create: true
@@ -18,4 +19,3 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }

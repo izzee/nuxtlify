@@ -11,6 +11,7 @@
           :to="post.path"
           v-html="post.title"
         />
+        <p v-html="formatDate(post.createdAt)"/>
       </li>
     </ul>
   </main>
@@ -22,6 +23,12 @@ export default {
     const posts = await $content('feed').fetch()
     return {
       posts
+    }
+  },
+  methods: {
+    formatDate(date) {
+      const rawDate = new Date(date)
+      return rawDate.toLocaleDateString();
     }
   }
 }
