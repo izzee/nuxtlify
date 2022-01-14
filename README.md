@@ -1,4 +1,4 @@
-# nuxt-starter
+# Nuxtlify
 
 ## Build Setup
 
