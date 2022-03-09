@@ -1,7 +1,7 @@
 <template>
 <main>
   <h1>Home</h1>
-  <p>A Nuxt simple template for blogs, galleries, and portfolios built using:</p>
+  <p>A simple Nuxt template for blogs, galleries, and portfolios built using:</p>
   <ul>
     <li>Nuxt Content</li>
     <li>Nuxt Image</li>
